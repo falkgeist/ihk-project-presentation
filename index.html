@@ -4,11 +4,41 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Projektpräsentation Produkt-Bundle</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<style>
+			h2.inline {
+				display: inline-block;
+				margin-bottom: 0;
+			}
+			h2.inline:not(.current) {
+				opacity: 0.5;
+			}
+			h1 .kiwibox, h2 .kiwibox, h2.kiwibox {
+				display: inline-block;
+				padding: 0.05em 0.2em 0 0.2em;
+				margin-bottom: 0.1em;
+				background-color: var(--r-main-color);
+				color: var(--r-background-color);
+			}
+			img.logo {
+				width: 25%;
+			}
+			#header-right img.logo {
+				display: block;
+				max-width: 100px;
+				margin-left: auto;
+				margin-right: 5%;
+			}
+			.no-header #header-left, .no-header #header-right {
+				opacity: 0;
+			}
+
+		</style>
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +46,99 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-state="no-header" data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+					<img src="/assets/KIWI_weiß.svg" class="logo">
+					<h2><span class="kiwibox">Product-Bundle</span></h2>
+					<h4>für das CMS Contao</h4>
+					<p><small>Projektarbeit von Mathis Völkert</small></p>
+				</section>
+				<section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<a href="#/1" style="color:var(--r-main-color)"><h2 class="inline current">Wer?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/2" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Warum?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/3" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Wie?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Was?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Und jetzt?</h2></a>
+					</section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2 class="inline current">Wer?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<a href="#/1" style="color:var(--r-main-color)"><h2 class="inline">Wer?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/2" style="color:var(--r-main-color)"><h2 class="inline current">Warum?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/3" style="color:var(--r-main-color)"><h2 class="inline">Wie?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline">Was?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline">Und jetzt?</h2></a>
+					</section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2 class="inline current">Warum?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<a href="#/1" style="color:var(--r-main-color)"><h2 class="inline">Wer?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/2" style="color:var(--r-main-color)"><h2 class="inline">Warum?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/3" style="color:var(--r-main-color)"><h2 class="inline current">Wie?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline">Was?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline">Und jetzt?</h2></a>
+					</section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2 class="inline current">Wie?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<a href="#/1" style="color:var(--r-main-color)"><h2 class="inline">Wer?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/2" style="color:var(--r-main-color)"><h2 class="inline">Warum?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/3" style="color:var(--r-main-color)"><h2 class="inline">Wie?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline current">Was?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline">Und jetzt?</h2></a>
+					</section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2 class="inline current">Was?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<a href="#/1" style="color:var(--r-main-color)"><h2 class="inline">Wer?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/2" style="color:var(--r-main-color)"><h2 class="inline">Warum?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/3" style="color:var(--r-main-color)"><h2 class="inline">Wie?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline">Was?</h2></a>
+						<div style="display: block; width: 100%; height: 0;"></div>
+						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline current">Und jetzt?</h2></a>
+					</section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2 class="inline current">Und jetzt?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2>Projektvorstellung</h2>
+					</section>
+					<section data-state="no-header" data-auto-animate data-background-iframe="https://products.xwing.kiwi.de"></section>
+					<section data-state="no-header" data-auto-animate data-background-iframe="https://products.localhost/contao?do=products"></section>
+				</section>
 			</div>
 		</div>
 
@@ -30,11 +151,67 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
+				hash: false,
+				slideNumber: 'c/t',
+				autoAnimateEasing: 'ease',
+				navigationMode: 'default',
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+		</script>
+		<style>
+			/* 1. Style header/footer <div> so they are positioned as desired. */
+			#header-left {
+				position: absolute;
+				width: 50%;
+				top: 0%;
+				left: 0%;
+				transition: opacity 0.8s;
+			}
+			#header-right {
+				position: absolute;
+				width: 50%;
+				top: 0%;
+				right: 0%;
+				transition: opacity 0.8s;
+			}
+			#footer-left {
+				position: absolute;
+				width: 50%;
+				bottom: 0%;
+				left: 0%;
+			}
+			#footer-right {
+				position: absolute;
+				width: 50%;
+				bottom: 0%;
+				right: 0%;
+			}
+		</style>
+
+		<!-- 2. Create hidden header/footer <div> -->
+		<div id="hidden" style="display:none;">
+			<div id="header">
+				<div id="header-left"></div>
+				<div id="header-right"><img src="/assets/KIWI_weiß.svg" class="logo"></div>
+				<div id="footer-left"></div>
+				<div id="footer-right"></div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+			// 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+			var header = $('#header').html();
+			if ( window.location.search.match( /print-pdf/gi ) ) {
+				Reveal.addEventListener( 'ready', function( event ) {
+					$('.slide-background').append(header);
+				});
+			}
+			else {
+				$('div.reveal').append(header);
+			}
 		</script>
 	</body>
 </html>
