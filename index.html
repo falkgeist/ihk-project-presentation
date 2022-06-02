@@ -18,12 +18,34 @@
 			h2.inline:not(.current) {
 				opacity: 0.5;
 			}
-			h1 .kiwibox, h2 .kiwibox, h2.kiwibox {
+			h1 .kiwibox, h2.kiwibox, h2 .kiwibox, h3.kiwibox, h3 .kiwibox, h4.kiwibox, h4 .kiwibox {
 				display: inline-block;
 				padding: 0.05em 0.2em 0 0.2em;
 				margin-bottom: 0.1em;
 				background-color: var(--r-main-color);
 				color: var(--r-background-color);
+			}
+			.kiwibox.ml {
+				margin-left: 20px;
+			}
+			div.kiwibox {
+				display: inline-block;
+				padding: 0.05em 0.2em 0 0.2em;
+				margin-bottom: 0.1em;
+				background-color: var(--r-main-color);
+				color: var(--r-background-color);
+			}
+			div.kiwibox.box-red {
+				background-color: #ff2c2d;
+				color: var(--r-main-color) !important;
+			}
+			div.kiwibox.box-green {
+				background-color: #17ff2e;
+				color: var(--r-background-color) !important;
+			}
+			div.kiwibox.box-blue  {
+				background-color: #1b91ff;
+				color: var(--r-main-color) !important;
 			}
 			img.logo {
 				width: 25%;
@@ -37,7 +59,9 @@
 			.no-header #header-left, .no-header #header-right {
 				opacity: 0;
 			}
-
+			ul.checklist {
+				list-style-type: '\2713';
+			}
 		</style>
 
 		<!-- Theme used for syntax highlighted code -->
@@ -51,21 +75,43 @@
 					<h2><span class="kiwibox">Product-Bundle</span></h2>
 					<h4>für das CMS Contao</h4>
 					<p><small>Projektarbeit von Mathis Völkert</small></p>
+					<aside class="notes" data-markdown>
+						Ich bin Mathis Völkert und arbeite bei der KIWI Werbeagentur GmbH, derzeit noch als Azubi.
+					</aside>
 				</section>
 				<section>
 					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
 						<a href="#/1" style="color:var(--r-main-color)"><h2 class="inline current">Wer?</h2></a>
 						<div style="display: block; width: 100%; height: 0;"></div>
-						<a href="#/2" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Warum?</h2></a>
+						<a href="#/2" style="color:var(--r-main-color)"><h2 class="inline">Warum?</h2></a>
+						<!--a href="#/2" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Warum?</h2></a-->
 						<div style="display: block; width: 100%; height: 0;"></div>
-						<a href="#/3" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Wie?</h2></a>
+						<a href="#/3" style="color:var(--r-main-color)"><h2 class="inline">Wie?</h2></a>
+						<!--a href="#/3" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Wie?</h2></a-->
 						<div style="display: block; width: 100%; height: 0;"></div>
-						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Was?</h2></a>
+						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline">Was?</h2></a>
+						<!--a href="#/4" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Was?</h2></a-->
 						<div style="display: block; width: 100%; height: 0;"></div>
-						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Und jetzt?</h2></a>
+						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline">Und jetzt?</h2></a>
+						<!--a href="#/5" style="color:var(--r-main-color)"><h2 class="inline current fragment semi-fade-out" data-fragment-index="0">Und jetzt?</h2></a-->
+						<aside class="notes" data-markdown>
+							- Betriebsvorstellung
+						</aside>
 					</section>
-					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
-						<h2 class="inline current">Wer?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+					<section data-auto-animate data-autoslide="2000" data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2 class="inline current" >Wer?</h2><h2 class="fragment fade-left kiwibox ml">Na, KIWI!</h2>
+						<aside class="notes" data-markdown>
+							KIWI ist eine inhabergeführte Full-Service-Werbeagentur aus Osnabrück mit den Schwerpunkten Strategie, Beratung, Kommunikation, Kreation und Digitallösungen für B2B- und B2C-Kunden.
+							Unser Hauptgeschäft ist die Gestaltung und Umsetzung von Webseiten, sowie die Programmierung von Individuallösungen.
+						</aside>
+					</section>
+
+					<section data-auto-animate data-background-video="/assets/KIWI.mp4" data-background-opacity="0.75">
+						<h2 class="inline current" style="margin-top: 50%;">Wer?</h2><h2 data-autoslide="2000" class="kiwibox ml" style="margin-top: 50%;">Na, KIWI!</h2>
+						<aside class="notes" data-markdown>
+							KIWI ist eine inhabergeführte Full-Service-Werbeagentur aus Osnabrück mit den Schwerpunkten Strategie, Beratung, Kommunikation, Kreation und Digitallösungen für B2B- und B2C-Kunden.
+							Unser Hauptgeschäft ist die Gestaltung und Umsetzung von Webseiten, sowie die Programmierung von Individuallösungen.
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -79,9 +125,66 @@
 						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline">Was?</h2></a>
 						<div style="display: block; width: 100%; height: 0;"></div>
 						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline">Und jetzt?</h2></a>
+						<aside class="notes" data-markdown>
+							- Begründung für das Product-Bundle
+						</aside>
+					</section>
+					<section data-visibility="hidden" data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2 class="inline current">Warum?</h2><h2 class="fragment fade-left kiwibox ml">Das ist "historisch so gewachsen"!</h2>
+						<aside class="notes" data-markdown>
+							Den Satz hat man vermutlich als Programmierer schonmal gehört, aber das ist nunmal kein Grund, es nicht zu ändern.
+						</aside>
 					</section>
 					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
-						<h2 class="inline current">Warum?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+						<h2 class="inline current">Warum?</h2>
+						<h4 class="fragment" data-fragment-index="0">Ziel:</h4>  <h4 class="fragment kiwibox" data-fragment-index="1">Darstellung einer Produktpalette</h4>
+						<h4 class="fragment" data-fragment-index="2" style="margin-top: 20px;">Lösung:</h4>
+						<div>
+							<div class="r-stack" style="width: calc(49% - 20px); padding: 10px; float: left;">
+								<div class="fragment kiwibox" data-fragment-index="3" style="width: 100%; padding: 5px; text-align: center">mit Bordmitteln</div>
+								<div class="fragment kiwibox box-red" data-fragment-index="6" style="width: 100%; padding: 5px; text-align: center">mit Bordmitteln</div>
+							</div>
+							<div class="r-stack" style="width: calc(49% - 20px); padding: 10px; float: left;">
+								<div class="fragment kiwibox" data-fragment-index="4" style="width: 100%; padding: 5px; text-align: center">als Individuallösung</div>
+								<div class="fragment kiwibox box-red" data-fragment-index="6" style="width: 100%; padding: 5px; text-align: center">als Individuallösung</div>
+							</div>
+							<div class="r-stack" style="width: calc(98% - 20px); padding: 10px; float: left;">
+								<div class="fragment kiwibox" data-fragment-index="5" style="width: 100%; padding: 5px; text-align: center">als Contao-Bundle</div>
+								<div class="fragment kiwibox box-green" data-fragment-index="6" style="width: 100%; padding: 5px; text-align: center">als Contao-Bundle</div>
+							</div>
+						</div>
+						<aside class="notes" data-markdown>
+							Warum ein Produktverwaltungs-Bundle?
+							Im Laufe des Jahres wurde uns im Rahmen mehrerer Projekte deutlich, dass viele der umgesetzten Seiten eine
+							[klick]
+							Produktpalette des Kunden beinhalten, welche allerdings gezielt keine Shopfunktionalität haben sollten.
+							Diese waren – "historisch gewachsen" – entweder
+							[klick]
+							umständlich mit den Bordmitteln von Contao
+							[klick]
+							oder als individuelle, lokale Erweiterung eingerichtet worden.
+							Daher wurde im Team entschieden, dass eine anwenderfreundlichere Universallösung gefunden werden muss.
+							[klick]
+							Ein Contao-Bundle war die naheliegende Lösung. Es wurde auch entschieden, dass für die kundenübergreifende Nutzbarkeit das Hinzufügen individueller Produkteigenschaften je Produktgruppe möglich sein muss.
+						</aside>
+					</section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2>Mehrwert</h2>
+						<ul>
+							<li class="fragment">einheitliche Pflege</li>
+							<li class="fragment">flexibel anpassbar</li>
+							<li class="fragment">keine Programmierkenntnisse zur Pflege nötig</li>
+							<li class="fragment">schnelle Einrichtung</li>
+						</ul>
+						<aside class="notes" data-markdown>
+
+						</aside>
+					</section>
+					<section data-visibility="hidden" data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2 class="inline current">Warum?</h2>
+						<p></p>
+						<aside class="notes" data-markdown>
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -95,9 +198,37 @@
 						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline">Was?</h2></a>
 						<div style="display: block; width: 100%; height: 0;"></div>
 						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline">Und jetzt?</h2></a>
+						<aside class="notes" data-markdown>
+							- Planungsprozess
+						</aside>
 					</section>
 					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
-						<h2 class="inline current">Wie?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+						<h2 class="inline current">Wie?</h2><h2 class="fragment fade-left kiwibox ml">Ich habe den Plan!</h2>
+						<aside class="notes" data-markdown>
+							- Zeitplanung der notwendigen Schritte
+							- Erstellung von PSP, Netzplan, Use-Case-Diagramm, Lastenheft, Pflichtenheft
+							- verschiedene Analysen
+							- Kostenberechnung
+						</aside>
+					</section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2>Geplante Umsetzung</h2>
+						<ol>
+							<li class="fragment">Einrichtung der Entwicklungsumgebung</li>
+							<li class="fragment">Konfiguration der DCAs</li>
+							<li class="fragment">Entwicklung der Frontendmodule für Listen- und Detailansicht</li>
+							<li class="fragment">Dynamische Eigenschaften</li>
+							<ul>
+								<li class="fragment">Erstellung der DCAs</li>
+								<li class="fragment">Erstellung der Models</li>
+								<li class="fragment">Entwicklung der Ausgabe der Eigenschaftsfelder im Produkt (Backend)</li>
+								<li class="fragment">Umsetzung der Speicherlogik (inkl. Löschen, Kopieren, etc.)</li>
+							</ul>
+						</ol>
+						<aside class="notes" data-markdown>
+							- Einrichtung des Webservers, Domain, Installation Contao, Einrichtung Git-Repo
+							- DCA: Konfiguration von Backend-Listenansicht, Backend-Feldern und SQL-Tabellen
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -111,10 +242,24 @@
 						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline current">Was?</h2></a>
 						<div style="display: block; width: 100%; height: 0;"></div>
 						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline">Und jetzt?</h2></a>
+						<aside class="notes" data-markdown>
+							- Umsetzung erläutern anhand Backend und Frontend
+						</aside>
 					</section>
 					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
-						<h2 class="inline current">Was?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+						<h2 class="inline current">Was?</h2><h2 class="fragment fade-left kiwibox ml">Schaffe, schaffe...</h2>
+						<aside class="notes" data-markdown>
+
+						</aside>
 					</section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<p>[Vorstellung Backend]</p>
+					</section>
+					<section data-visibility="hidden" data-state="no-header" data-auto-animate data-background-iframe="https://products.xwing.kiwi.de"></section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<p>[Vorstellung Frontend]</p>
+					</section>
+					<section data-visibility="hidden" data-state="no-header" data-auto-animate data-background-iframe="https://products.localhost/contao?do=products"></section>
 				</section>
 				<section>
 					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
@@ -127,17 +272,32 @@
 						<a href="#/4" style="color:var(--r-main-color)"><h2 class="inline">Was?</h2></a>
 						<div style="display: block; width: 100%; height: 0;"></div>
 						<a href="#/5" style="color:var(--r-main-color)"><h2 class="inline current">Und jetzt?</h2></a>
+						<aside class="notes" data-markdown>
+							...und dann das Fazit.
+						</aside>
 					</section>
 					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
-						<h2 class="inline current">Und jetzt?</h2> <h2 class="fragment fade-left kiwibox">Na, KIWI!</h2>
+						<h2 class="inline current">Und jetzt?</h2><h2 class="fragment fade-left kiwibox ml">Ich liebe es, wenn ein Plan funktioniert!</h2>
+						<aside class="notes" data-markdown>
+							Letztendlich
+						</aside>
+					</section>
+					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+						<h2>Mein Fazit</h2>
+						<ul class="checklist">
+							<li>Ziele erreicht</li>
+							<li>Planung, Testing und Dokumentation</li>
+							<li>Grundlage für zukünftige Projekte geschaffen</li>
+							<li>gute Erfahrungen gesammelt</li>
+						</ul>
+						<aside class="notes" data-markdown>
+
+						</aside>
 					</section>
 				</section>
-				<section>
-					<section data-auto-animate data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
-						<h2>Projektvorstellung</h2>
-					</section>
-					<section data-state="no-header" data-auto-animate data-background-iframe="https://products.xwing.kiwi.de"></section>
-					<section data-state="no-header" data-auto-animate data-background-iframe="https://products.localhost/contao?do=products"></section>
+				<section data-state="no-header" data-background-image="/assets/KIWI_4c_K.svg" data-background-size="contain" data-background-position="left center" data-background-opacity="0.25">
+					<img src="/assets/KIWI_weiß.svg" class="logo" style="position: absolute; top: 0; transform: translateX(-50%);">
+					<h2 data-autoslide="1500" class="fragment" style="margin-top: 200px">Vielen Dank für Ihre Aufmerksamkeit!</h2>
 				</section>
 			</div>
 		</div>
@@ -152,12 +312,43 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: false,
-				slideNumber: 'c/t',
+				//slideNumber: 'c/t',
 				autoAnimateEasing: 'ease',
 				navigationMode: 'default',
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			Reveal.configure({
+				keyboard: {
+					49: function() {
+						Reveal.slide(1)
+					},
+					50: function() {
+						Reveal.slide(2)
+					},
+					51: function() {
+						Reveal.slide(3)
+					},
+					52: function() {
+						Reveal.slide(4)
+					},
+					53: function() {
+						Reveal.slide(5)
+					},
+					54: function() {
+						Reveal.slide(6)
+					},
+					55: function() {
+						Reveal.slide(7)
+					},
+					56: function() {
+						Reveal.slide(8)
+					},
+					57: function() {
+						Reveal.slide(9)
+					}
+				}
 			});
 		</script>
 		<style>
@@ -212,6 +403,11 @@
 			else {
 				$('div.reveal').append(header);
 			}
+
+			// Custom JS
+			Reveal.on( 'fragmentshown', event => {
+				console.log(event.fragment);
+			} );
 		</script>
 	</body>
 </html>
